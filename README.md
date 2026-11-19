@@ -206,7 +206,35 @@ Class `Theme` menyimpan konstanta warna dan font yang dipakai bersama oleh selur
 | `NORMAL` | Arial Plain 16 |
 | `TOMBOL` | Arial Bold 16 |
 
-## 8. Cara Menjalankan Program
+## 8. Output Program
+
+### a. Tampilan Halaman Utama (Portofolio)
+
+![Tampilan MainFrame](lib/image/MainFrame.jpg)
+
+Saat program dijalankan, `Main` membuka jendela berjudul "Portofolio Saya" yang langsung menampilkan halaman `Portofolio`. Halaman ini berisi:
+- Judul "Selamat Datang di Portofolio Saya" berwarna biru di bagian atas.
+- Subjudul "Daftar Keahlian" dengan tiga kotak keahlian sejajar, yaitu Coding, Project Management, dan Writing. Setiap kotak berlatar putih dengan garis tepi biru tebal.
+- Tombol "Contact Me" berwarna biru di bagian bawah.
+
+### b. Tampilan Halaman Detail
+
+![Tampilan Detail Management](lib/image/DetailManagement.jpg)
+
+Ketika salah satu kotak keahlian diklik, aplikasi berpindah ke halaman `Detail` tanpa membuka jendela baru. Gambar di atas adalah contoh ketika tombol Project Management diklik. Halaman ini menampilkan:
+- Judul sesuai keahlian yang dipilih, misalnya "Detail: Management".
+- Deskripsi singkat mengenai keahlian tersebut, ditampilkan rata tengah.
+- Tombol "Back" untuk kembali ke halaman Portofolio.
+
+Isi judul dan deskripsi berubah mengikuti tombol yang diklik (Coding, Project Management, atau Writing).
+
+### c. Tampilan Dialog Kontak
+
+![Tampilan Contact](lib/image/Contact.jpg)
+
+Ketika tombol "Contact Me" diklik, muncul dialog modal berjudul "Kontak" yang menampilkan nomor kontak. Selama dialog terbuka, jendela utama tidak dapat digunakan. Dialog ditutup dengan menekan tombol "OK".
+
+## 9. Cara Menjalankan Program
 
 Pastikan Java JDK telah terpasang dan keempat file (`Main.java`, `Portofolio.java`, `Detail.java`, `Theme.java`) berada di folder yang sama.
 
@@ -222,7 +250,7 @@ Jalankan program:
 java Main
 ```
 
-## 9. Kesimpulan
+## 10. Kesimpulan
 
 Project Portofolio GUI ini menerapkan konsep dasar pembuatan antarmuka menggunakan Java Swing. `JFrame` dan `JDialog` digunakan sebagai Top Level Container, `JPanel` sebagai Intermediate Component, komponen seperti `JLabel` dan `JButton` sebagai Atomic Component, serta `BorderLayout`, `GridLayout`, `FlowLayout`, `GridBagLayout`, dan `CardLayout` sebagai Layout Manager. Interaksi pengguna ditangani menggunakan `ActionListener` dengan ekspresi lambda.
 
